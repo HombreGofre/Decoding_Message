@@ -1,0 +1,39 @@
+3 love
+6 computers
+2 dogs
+4 cats
+1 I
+5 you
+    FILE *archivo = fopen(NOMBRE_ARCHIVO, "r"); // Modo lectura
+    char bufer[LONGITUD_MAXIMA_CADENA];         // Aquí vamos a ir almacenando cada línea
+    while (fgets(bufer, LONGITUD_MAXIMA_CADENA, archivo))
+    {
+        // Aquí, justo ahora, tenemos ya la línea. Le vamos a remover el salto
+        strtok(bufer, "\n");
+        // La imprimimos, pero realmente podríamos hacer cualquier otra cosa
+        printf("La línea es: '%s'\n", bufer);
+    }
+    return 0;
+}
+    FILE *archivo = fopen(NOMBRE_ARCHIVO, "r"); // Modo lectura
+    char bufer[LONGITUD_MAXIMA_CADENA];         // Aquí vamos a ir almacenando cada línea
+    while (fgets(bufer, LONGITUD_MAXIMA_CADENA, archivo))
+    {
+        // Aquí, justo ahora, tenemos ya la línea. Le vamos a remover el salto
+        strtok(bufer, "\n");
+        // La imprimimos, pero realmente podríamos hacer cualquier otra cosa
+        printf("La línea es: '%s'\n", bufer);
+    }
+    return 0;
+}
+    FILE *archivo = fopen(NOMBRE_ARCHIVO, "r"); // Modo lectura
+    char bufer[LONGITUD_MAXIMA_CADENA];         // Aquí vamos a ir almacenando cada línea
+    while (fgets(bufer, LONGITUD_MAXIMA_CADENA, archivo))
+    {
+        // Aquí, justo ahora, tenemos ya la línea. Le vamos a remover el salto
+        strtok(bufer, "\n");
+        // La imprimimos, pero realmente podríamos hacer cualquier otra cosa
+        printf("La línea es: '%s'\n", bufer);
+    }
+    return 0;
+}
