@@ -14,7 +14,7 @@ int	pyramid_heigth(int	num)
 	return (int)((sqrt(8 * (double)num + 1) - 1) / 2);
 }
 
-void	in_pyramid(int	*num, int	size)
+void	in_pyramid(int	*num, int	size, char	*bufer)
 {
 	int	altura;
 	int	i;
@@ -63,7 +63,6 @@ int main()
         // Aquí, justo ahora, tenemos ya la línea. Le vamos a remover el salto
 		strtok(bufer, " ");
 		i = atoi(bufer);
-        //strtok(bufer, "\n");
 		num[j] = i;
         // La imprimimos, pero realmente podríamos hacer cualquier otra cosa
         //printf("La línea es: '%s'\n", bufer);
@@ -78,7 +77,7 @@ int main()
 		printf("%d ", num[j]);
 		j++;
 	}*/
-	in_pyramid(num, size);
+	in_pyramid(num, size, bufer);
 	//system("leaks a.out");
     return 0;
 }
