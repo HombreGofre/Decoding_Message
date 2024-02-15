@@ -31,17 +31,17 @@ void	in_pyramid(int	*num, int	size, char	*bufer)
 	{
 		while (j <= altura - i)
 		{
-			printf(" ");
+//			printf(" ");
 			j++;
 		}
 		while (k <= i)
 		{
-			printf("%d ", num[n]);
+//			printf("%d ", num[n]);
 			n++;
 			k++;
 		}
 		i++;
-		printf("\n");
+//		printf("\n");
 		j = 1;
 		k = 1;
 	}
@@ -68,6 +68,7 @@ int main()
         //printf("La línea es: '%s'\n", bufer);
 		j++;
 		size++;
+		printf("%d ", num[j]);
     }
 	printf("\n*****************************************************\n");
 	qsort(num, j, sizeof(int), comparar_enteros);
